@@ -26,9 +26,9 @@ Check out my [blog](https://medium.com/@thangchung) or say hi on [Twitter](https
   - [Style Guides](#style-guides)
   - [Tools](#tools)
   - [Cheatsheets](#cheatsheets)
-- [Contributors](#contributors)
-- [Backers](#backers)
-- [Sponsors](#sponsors)
+- [ผู้มีส่วนร่วม](#ผู้มีส่วนร่วม)
+- [ผู้สนับสนุน](#ผู้สนับสนุน)
+- [ผู้สปอนเซอร์](#ผู้สปอนเซอร์)
 - [License](#license)
 
 # Introduction
@@ -3221,21 +3221,21 @@ private int ConvertTo32BitInt(int value)
 
 ---
 
-# Contributors
+# ผู้มีส่วนร่วม
 
-Thank you to all the people who have already contributed to `clean-code-dotnet` project
+ขอบคุณทุกคนที่มีส่วนร่วมในโปรเจค `clean-code-dotnet`
 
 <a href="https://github.com/thangchung/clean-code-dotnet/graphs/contributors"><img src="https://opencollective.com/cleancodedotnet/contributors.svg?width=890" title="contributors" alt="contributors" /></a>
 
-# Backers
+# ผู้สนับสนุน
 
-Love our work and help us continue our activities? [[Become a backer](https://opencollective.com/cleancodedotnet#backer)]
+รักงานของเราและช่วยเราในการดำเนินกิจกรรมต่อไปได้หรือไม่? [[เป็นผู้สนับสนุน](https://opencollective.com/cleancodedotnet#backer)]
 
 <a href="https://opencollective.com/cleancodedotnet#backers" target="_blank"><img src="https://opencollective.com/cleancodedotnet/backers.svg?width=890"></a>
 
-# Sponsors
+# ผู้สปอนเซอร์
 
-Become a sponsor and get your logo in our README on Github with a link to your site. [[Become a sponsor](https://opencollective.com/cleancodedotnet#sponsor)]
+เป็นผู้สปอนเซอร์และได้รับโลโก้ของคุณใน README ของเราบน Github พร้อมลิงก์ไปยังเว็บไซต์ของคุณ [[เป็นผู้สปอนเซอร์](https://opencollective.com/cleancodedotnet#sponsor)]
 
 <a href="https://opencollective.com/cleancodedotnet/sponsor/0/website" target="_blank"><img src="https://opencollective.com/cleancodedotnet/sponsor/0/avatar.svg"></a>
 <a href="https://opencollective.com/cleancodedotnet/sponsor/1/website" target="_blank"><img src="https://opencollective.com/cleancodedotnet/sponsor/1/avatar.svg"></a>
@@ -3247,4 +3247,4 @@ Become a sponsor and get your logo in our README on Github with a link to your s
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-To the extent possible under law, [thangchung](https://github.com/thangchung) has waived all copyright and related or neighboring rights to this work.
+ในขอบเขตของกฎหมายที่เป็นไปได้ภายใต้ [thangchung](https://github.com/thangchung) ได้สละลิขสิทธิ์ทั้งหมดและสิทธิ์ที่เกี่ยวข้องหรือที่อยู่ใกล้เคียงกับผลงานนี้ไปแล้ว
