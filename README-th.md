@@ -1555,7 +1555,6 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
 - คุณสามารถ lazy load คุณสมบัติของ object ได้พูดง่าย ๆ คือการรับมันมาจากเซิร์ฟเวอร์
 
 นอกจากนี้ ส่วนนี้เป็นส่วนหนึ่งของหลักการออกแบบที่เรียกว่า Open/Closed principle ซึ่งเป็นหลักการการออกแบบแบบเชิงวัตถุ
-</details>
 
 **Bad:**
 
