@@ -1,14 +1,14 @@
-# Clean Code concepts adapted for .NET/.NET Core
+# หลักการ Clean Code ที่ปรับใช้สำหรับ .NET/.NET Core
 
-If you liked `clean-code-dotnet` project or if it helped you, please give a star :star: for this repository. That will not only help strengthen our .NET community but also improve skills about the clean code for .NET developers in around the world. Thank you very much :+1:
+หากคุณชอบโปรเจ็กต์ `clean-code-dotnet` หรือหากมันเป็นประโยชน์แก่คุณ กรุณาให้ดาว :star: สำหรับ repositor นี้ด้วย นอกจากจะช่วยเสริมสร้างชุมชน .NET ของเราแล้ว ยังช่วยพัฒนาทักษะในการเขียนโค้ดแบบ clean code ของนักพัฒนา .NET ทั่วโลกด้วยครับ ขอบคุณมากครับ :+1:
 
-Check out my [blog](https://medium.com/@thangchung) or say hi on [Twitter](https://twitter.com/thangchung)!
+ตรวจสอบ[บล็อกของฉัน](https://medium.com/@thangchung)หรือส่งคำทักทายที่ [Twitter](https://twitter.com/thangchung)!
 
 # Table of Contents
 
-- [Clean Code concepts adapted for .NET/.NET Core](#clean-code-concepts-adapted-for-netnet-core)
+- [หลักการ Clean Code ที่ปรับใช้สำหรับ .NET/.NET Core](#หลักการ-clean-code-ที่ปรับใช้สำหรับ-netnet-core)
 - [Table of Contents](#table-of-contents)
-- [Introduction](#introduction)
+- [บทนำ](#บทนำ)
 - [Clean Code .NET](#clean-code-net)
   - [Naming](#naming)
   - [Variables](#variables)
@@ -31,15 +31,15 @@ Check out my [blog](https://medium.com/@thangchung) or say hi on [Twitter](https
 - [ผู้สปอนเซอร์](#ผู้สปอนเซอร์)
 - [License](#license)
 
-# Introduction
+# บทนำ
 
 ![Humorous image of software quality estimation as a count of how many expletives you shout when reading code](http://www.osnews.com/images/comics/wtfm.jpg)
 
-Software engineering principles, from Robert C. Martin's book [_Clean Code_](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882), adapted for .NET/.NET Core. This is not a style guide. It's a guide to producing readable, reusable, and refactorable software in .NET/.NET Core.
+หลักการวิศวกรรมซอฟต์แวร์จากหนังสือ [_Clean Code_](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) ของ Robert C. Martin ที่ปรับใช้สำหรับ .NET/.NET Core นี่ไม่ใช่เป็นคู่มือการเขียนโค้ด มันเป็นคู่มือเพื่อการสร้างซอฟต์แวร์ที่สามารถอ่านได้ ใช้ซ้ำได้ และสามารถ Refactor ได้ใน .NET/.NET Core
 
-Not every principle herein has to be strictly followed, and even fewer will be universally agreed upon. These are guidelines and nothing more, but they are ones codified over many years of collective experience by the authors of _Clean Code_.
+ไม่ใช่ทุกหลักการต่อไปนี้ต้องปฏิบัติอย่างเคร่งครัด และอาจไม่ได้เป็นการยอมรับอย่างแพร่หลาย นี่เป็นแนวทางเท่านั้น แต่เป็นแนวทางที่รวบรวมกันมาหลายปีจากประสบการณ์ร่วมกันของผู้เขียน Clean Code
 
-Inspired from [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript) and [clean-code-php](https://github.com/jupeter/clean-code-php) lists.
+ได้รับแรงบันดาลใจจาก [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript) และ รายการ [clean-code-php](https://github.com/jupeter/clean-code-php)
 
 # Clean Code .NET
 
