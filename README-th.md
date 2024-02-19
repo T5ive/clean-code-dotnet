@@ -1542,7 +1542,7 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
 ## Objects and Data Structures
 
 <details>
-  <summary><b>Use getters and setters</b></summary>
+  <summary><b>ใช้ getters และ setters</b></summary>
 
 ใน C# / VB.NET คุณสามารถใช้ `public`, `protected` และ `private` สำหรับเมทอดได้
 โดยใช้มัน, คุณสามารถควบคุมการปรับเปลี่ยนคุณสมบัติของ object ด้
