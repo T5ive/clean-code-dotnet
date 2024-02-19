@@ -11,7 +11,7 @@
 - [บทนำ](#บทนำ)
 - [Clean Code .NET](#clean-code-net)
   - [การตั้งชื่อ](#การตั้งชื่อ)
-  - [Variables](#variables)
+  - [ตัวแปร](#ตัวแปร)
   - [Functions](#functions)
   - [Objects and Data Structures](#objects-and-data-structures)
   - [Classes](#classes)
@@ -273,14 +273,14 @@ public static void main(String[] args)
 
 </details>
 
-## Variables
+## ตัวแปร
 
 <details>
-  <summary><b>Avoid nesting too deeply and return early</b></summary>
+  <summary><b>หลีกเลี่ยงการทำให้โค้ดซ้อนทับกันมากเกินไปและการ Return ค่าแรกที่เจอก่อน</b></summary>
 
-Too many if else statements can make the code hard to follow. **Explicit is better than implicit**.
+การมี if else มากเกินไป อาจทำให้โค้ดยากต่อการติดตามได้ **ชัดเจนดีกว่าทำแบบไม่ชัดเจน**.
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 public bool IsShopOpen(string day)
@@ -313,7 +313,7 @@ public bool IsShopOpen(string day)
 }
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 public bool IsShopOpen(string day)
@@ -328,7 +328,7 @@ public bool IsShopOpen(string day)
 }
 ```
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 public long Fibonacci(int n)
@@ -358,7 +358,7 @@ public long Fibonacci(int n)
 }
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 public long Fibonacci(int n)
@@ -382,16 +382,16 @@ public long Fibonacci(int n)
 }
 ```
 
-**[⬆ back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
 
 <details>
-  <summary><b>Avoid mental mapping</b></summary>
+  <summary><b>หลีกเลี่ยงการสร้างความสับสนให้ผู้อ่านโค้ด</b></summary>
 
-Don’t force the reader of your code to translate what the variable means. **Explicit is better than implicit**.
+อย่าทำให้ผู้อ่านโค้ดต้องแปลงความหมายของตัวแปร **ชัดเจนดีกว่าทำแบบไม่ชัดเจน**.
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 var l = new[] { "Austin", "New York", "San Francisco" };
@@ -410,7 +410,7 @@ for (var i = 0; i < l.Count(); i++)
 }
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 var locations = new[] { "Austin", "New York", "San Francisco" };
@@ -427,16 +427,16 @@ foreach (var location in locations)
 }
 ```
 
-**[⬆ back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
 
 <details>
-  <summary><b>Avoid magic string</b></summary>
+  <summary><b>หลีกเลี่ยงการใช้ Magic string</b></summary>
 
-Magic strings are string values that are specified directly within application code that have an impact on the application’s behavior. Frequently, such strings will end up being duplicated within the system, and since they cannot automatically be updated using refactoring tools, they become a common source of bugs when changes are made to some strings but not others.
+Magic string คือค่าข้อความที่ระบุโดยตรงในโค้ดแอปพลิเคชันที่มีผลต่อพฤติกรรมของแอปพลิเคชัน โดยทั่วไปแล้วข้อความเช่นนั้นจะมีการทำซ้ำในระบบ และเนื่องจากสิ่งเหล่านั้นไม่สามารถอัปเดตได้โดยอัตโนมัติด้วย Refactoring ได้ จึงกลายเป็นที่มาของข้อผิดพลาดที่พบบ่อยเมื่อมีการเปลี่ยนแปลงข้อมูลบางส่วนแต่ไม่ใช่ส่วนอื่น ๆ
 
-**Bad**
+**ไม่ดี**
 
 ```csharp
 if (userRole == "Admin")
@@ -445,7 +445,7 @@ if (userRole == "Admin")
 }
 ```
 
-**Good**
+**ดี**
 
 ```csharp
 const string ADMIN_ROLE = "Admin"
@@ -455,18 +455,18 @@ if (userRole == ADMIN_ROLE)
 }
 ```
 
-Using this we only have to change in centralize place and others will adapt it.
+โดยใช้วิธีนี้ เราสามารถทำการเปลี่ยนแปลงได้ในที่เดียว และคนอื่น ๆ จะปรับตัวตามได้
 
-**[⬆ back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
 
 <details>
-  <summary><b>Don't add unneeded context</b></summary>
+  <summary><b>อย่าเพิ่มบริบทที่ไม่จำเป็น</b></summary>
 
-If your class/object name tells you something, don't repeat that in your variable name.
+ถ้าชื่อคลาส/ออบเจกต์บอกให้คุณรู้อะไรบางอย่างอยู่แล้ว อย่าทำซ้ำในชื่อตัวแปร
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 public class Car
@@ -479,7 +479,7 @@ public class Car
 }
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 public class Car
@@ -492,33 +492,33 @@ public class Car
 }
 ```
 
-**[⬆ back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
 
 <details>
-  <summary><b>Use meaningful and pronounceable variable names</b></summary>
+  <summary><b>ใช้ชื่อตัวแปรที่มีความหมายและออกเสียงได้</b></summary>
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 var ymdstr = DateTime.UtcNow.ToString("MMMM dd, yyyy");
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 var currentDate = DateTime.UtcNow.ToString("MMMM dd, yyyy");
 ```
 
-**[⬆ Back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
 
 <details>
-  <summary><b>Use the same vocabulary for the same type of variable</b></summary>
+  <summary><b>ใช้ศัพท์เดียวกันสำหรับประเภทตัวแปรเดียวกัน</b></summary>
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 GetUserInfo();
@@ -527,22 +527,22 @@ GetUserRecord();
 GetUserProfile();
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 GetUser();
 ```
 
-**[⬆ Back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
 
 <details>
-  <summary><b>Use searchable names (part 1)</b></summary>
+  <summary><b>ใช้ชื่อที่สามารถค้นหาได้ (ส่วนที่ 1)</b></summary>
 
-We will read more code than we will ever write. It's important that the code we do write is readable and searchable. By _not_ naming variables that end up being meaningful for understanding our program, we hurt our readers. Make your names searchable.
+เราจะอ่านโค้ดมากกว่าที่เราจะเขียนโค้ดเสมอ จึงสำคัญที่โค้ดที่เราเขียนจะมีความคมชัดและสามารถค้นหาได้ โดย _ไม่_ ตั้งชื่อตัวแปรที่จะเข้าใจได้ว่ามีความหมายในโปรแกรมของเรา อย่าทำร้ายผู้อ่านของเรา โปรดทำให้ชื่อตัวแปรของคุณสามารถค้นหาได้
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 // What the heck is data for?
@@ -558,7 +558,7 @@ Console.Write("JSON form of Data object: ");
 Console.WriteLine(sr1.ReadToEnd());
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 var person = new Person
@@ -577,26 +577,26 @@ Console.Write("JSON form of Data object: ");
 Console.WriteLine(sr2.ReadToEnd());
 ```
 
-**[⬆ Back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
 
 <details>
-  <summary><b>Use searchable names (part 2)</b></summary>
+  <summary><b>ใช้ชื่อที่สามารถค้นหาได้ (ส่วนที่ 2)</b></summary>
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 var data = new { Name = "John", Age = 42, PersonAccess = 4};
 
-// What the heck is 4 for?
+// 4 คือ?
 if (data.PersonAccess == 4)
 {
-    // do edit ...
+    // ทำการแก้ไข...
 }
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 public enum PersonAccess : int
@@ -616,18 +616,18 @@ var person = new Person
 
 if (person.PersonAccess == PersonAccess.ACCESS_UPDATE)
 {
-    // do edit ...
+    // ทำการแก้ไข...
 }
 ```
 
-**[⬆ Back to top](#สารบัญ)**
+**[⬆ ย้อนกลับไปด้านบน](#สารบัญ)**
 
 </details>
 
 <details>
-  <summary><b>Use explanatory variables</b></summary>
+  <summary><b>ใช้ตัวแปรเพื่ออธิบาย</b></summary>
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 const string Address = "One Infinite Loop, Cupertino 95014";
@@ -639,9 +639,9 @@ if (matches[0].Success == true && matches[1].Success == true)
 }
 ```
 
-**Good:**
+**ดี:**
 
-Decrease dependence on regex by naming subpatterns.
+ลดการพึ่งพา regex โดยการตั้งชื่อให้ subpatterns
 
 ```csharp
 const string Address = "One Infinite Loop, Cupertino 95014";
@@ -655,18 +655,18 @@ if(cityGroup.Success == true && zipCodeGroup.Success == true)
 }
 ```
 
-**[⬆ back to top](#สารบัญ)**
+**[⬆ ย้อนกลับไปด้านบน](#สารบัญ)**
 
 </details>
 
 <details>
-  <summary><b>Use default arguments instead of short circuiting or conditionals</b></summary>
+    <summary><b>ใช้ default arguments แทน short circuiting หรือเงื่อนไข</b></summary>
 
-**Not good:**
+**ไม่ดี:**
 
-This is not good because `breweryName` can be `NULL`.
+ไม่ดีเพราะ `breweryName` อาจเป็น `NULL`
 
-This opinion is more understandable than the previous version, but it better controls the value of the variable.
+ความเห็นนี้เข้าใจได้มากกว่าเวอร์ชันก่อนหน้านี้ แต่มันจะควบคุมค่าของตัวแปรได้ดียิ่งขึ้น
 
 ```csharp
 public void CreateMicrobrewery(string name = null)
@@ -676,7 +676,7 @@ public void CreateMicrobrewery(string name = null)
 }
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
@@ -685,7 +685,7 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 }
 ```
 
-**[⬆ back to top](#สารบัญ)**
+**[⬆ ย้อนกลับไปด้านบน](#สารบัญ)**
 
 </details>
 
