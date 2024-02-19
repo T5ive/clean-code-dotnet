@@ -10,7 +10,7 @@
 - [สารบัญ](#สารบัญ)
 - [บทนำ](#บทนำ)
 - [Clean Code .NET](#clean-code-net)
-  - [Naming](#naming)
+  - [การตั้งชื่อ](#การตั้งชื่อ)
   - [Variables](#variables)
   - [Functions](#functions)
   - [Objects and Data Structures](#objects-and-data-structures)
@@ -43,55 +43,55 @@
 
 # Clean Code .NET
 
-## Naming
+## การตั้งชื่อ
 
-<details>
-  <summary><b>Avoid using bad names</b></summary>
-A good name allows the code to be used by many developers. The name should reflect what it does and give context.
+<details> <summary><b>หลีกเลี่ยงการใช้ชื่อที่ไม่ดี</b></summary> การตั้งชื่อที่ดีช่วยให้โค้ดสามารถใช้ได้โดยนักพัฒนาหลายคน ชื่อควรสะท้อนถึงการทำงานและให้ความเข้าใจ
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 int d;
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 int daySinceModification;
 ```
 
-**[⬆ Back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
 
 <details>
-  <summary><b>Avoid Misleading Names</b></summary>
+  <summary><b>หลีกเลี่ยงการใช้ชื่อที่ทำให้เข้าใจผิด</b></summary>
 
-Name the variable to reflect what it is used for.
+ตั้งชื่อตัวแปรเพื่อสะท้อนว่าใช้สำหรับอะไร
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 var dataFromDb = db.GetFromService().ToList();
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 var listOfEmployee = _employeeService.GetEmployees().ToList();
 ```
 
-**[⬆ Back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
 
 <details>
-  <summary><b>Avoid Hungarian notation</b></summary>
+  <summary><b>หลีกเลี่ยงการใช้ Hungarian notation</b></summary>
 
-Hungarian Notation restates the type which is already present in the declaration. This is pointless since modern IDEs will identify the type.
+Hungarian Notation ทำซ้ำชนิดข้อมูลที่มีอยู่ในการประกาศแล้ว ซึ่งไม่มีประโยชน์เนื่องจาก IDE รุ่นใหม่จะระบุชนิดข้อมูลได้เอง
 
-**Bad:**
+_Hungarian notation หมายถึงชื่อที่บ่งบอกถึงลักษณะของตัวแปร (เป็นการตั้งชื่อตัวแปรโดยใช้ตัวย่อของประเภทของตัวแปร)_
+
+**ไม่ดี:**
 
 ```csharp
 int iCounter;
@@ -99,7 +99,7 @@ string strFullName;
 DateTime dModifiedDate;
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 int counter;
@@ -107,9 +107,9 @@ string fullName;
 DateTime modifiedDate;
 ```
 
-Hungarian Notation should also not be used in paramaters.
+Hungarian Notation ไม่ควรใช้ในพารามิเตอร์
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 public bool IsShopOpen(string pDay, int pAmount)
@@ -118,7 +118,7 @@ public bool IsShopOpen(string pDay, int pAmount)
 }
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 public bool IsShopOpen(string day, int amount)
@@ -127,18 +127,15 @@ public bool IsShopOpen(string day, int amount)
 }
 ```
 
-**[⬆ Back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
-
 <details>
-  <summary><b>Use consistent capitalization</b></summary>
+  <summary><b>ใช้การใช้ตัวพิมพ์ใหญ่อย่างสม่ำเสมอ</b></summary>
 
-Capitalization tells you a lot about your variables,
-functions, etc. These rules are subjective, so your team can choose whatever
-they want. The point is, no matter what you all choose, just be consistent.
+การใช้ตัวพิมพ์ใหญ่บอกถึงอะไรบางอย่างเกี่ยวกับตัวแปร ฟังก์ชัน ฯลฯ กฎเหล่านี้เป็นเรื่องของวิจารณญาณ ดังนั้นทีมของคุณสามารถเลือกใช้อะไรก็ได้ จุดสำคัญคือ ไม่ว่าคุณจะเลือกใช้อะไรก็ให้เหมือนกันเสมอ
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 const int DAYS_IN_WEEK = 7;
@@ -154,7 +151,7 @@ class animal {}
 class Alpaca {}
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 const int DaysInWeek = 7;
@@ -170,16 +167,15 @@ class Animal {}
 class Alpaca {}
 ```
 
-**[⬆ back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
-
 <details>
-  <summary><b>Use pronounceable names</b></summary>
+  <summary><b>ใช้ชื่อที่สามารถออกเสียงได้</b></summary>
 
-It will take time to investigate the meaning of the variables and functions when they are not pronounceable.
+การใช้ชื่อที่สามารถออกเสียงได้ช่วยลดเวลาในการสืบค้นความหมายของตัวแปรและฟังก์ชัน
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 public class Employee
@@ -189,7 +185,7 @@ public class Employee
 }
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 public class Employee
@@ -199,16 +195,15 @@ public class Employee
 }
 ```
 
-**[⬆ Back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
-
 <details>
-  <summary><b>Use Camelcase notation</b></summary>
+  <summary><b>ใช้รูปแบบ Camelcase</b></summary>
 
-Use [Camelcase Notation](https://en.wikipedia.org/wiki/Camel_case) for variable and method paramaters.
+ใช้ [Camelcase Notation](https://en.wikipedia.org/wiki/Camel_case) สำหรับตัวแปรและพารามิเตอร์เมธอด
 
-**Bad:**
+**ไม่ดี:**
 
 ```csharp
 var employeephone;
@@ -219,7 +214,7 @@ public double CalculateSalary(int workingdays, int workinghours)
 }
 ```
 
-**Good:**
+**ดี:**
 
 ```csharp
 var employeePhone;
@@ -230,27 +225,26 @@ public double CalculateSalary(int workingDays, int workingHours)
 }
 ```
 
-**[⬆ Back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
-
 <details>
-  <summary><b>Use domain name</b></summary>
+  <summary><b>ใช้ชื่อโดเมน</b></summary>
 
-People who read your code are also programmers. Naming things right will help everyone be on the same page. We don't want to take time to explain to everyone what a variable or function is for.
+คนที่อ่านโค้ดของคุณก็เป็นโปรแกรมเมอร์ด้วย การตั้งชื่อถูกต้องจะช่วยทุกคนเข้าใจเกี่ยวกับตัวแปรหรือฟังก์ชันได้ เราไม่ต้องการที่จะใช้เวลาในการอธิบายว่าตัวแปรหรือฟังก์ชันใช้งานอย่างไร
 
-**Good**
+**ดี**
 
 ```csharp
 public class SingleObject
 {
-    // create an object of SingleObject
+    // สร้างอ็อบเจกต์ของ SingleObject
     private static SingleObject _instance = new SingleObject();
 
-    // make the constructor private so that this class cannot be instantiated
+    // ทำให้ constructor เป็น private เพื่อให้คลาสนี้ไม่สามารถสร้างอ็อบเจกต์ได้
     private SingleObject() {}
 
-    // get the only object available
+    // ดึงได้เฉพาะ object ที่มีอยู่เท่านั้น
     public static SingleObject GetInstance()
     {
         return _instance;
@@ -264,18 +258,18 @@ public class SingleObject
 
 public static void main(String[] args)
 {
-    // illegal construct
+    // ไม่สามารถสร้างอ็อบเจกต์ได้
     // var object = new SingleObject();
 
-    // Get the only object available
+    // ดึงได้เฉพาะ object ที่มีอยู่เท่านั้น
     var singletonObject = SingleObject.GetInstance();
 
-    // show the message
+    // แสดงข้อความ
     singletonObject.ShowMessage();
 }
 ```
 
-**[⬆ Back to top](#สารบัญ)**
+**[⬆ กลับไปด้านบน](#สารบัญ)**
 
 </details>
 
