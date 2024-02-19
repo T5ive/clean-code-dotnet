@@ -1544,17 +1544,18 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
 <details>
   <summary><b>Use getters and setters</b></summary>
 
-In C# / VB.NET you can set `public`, `protected` and `private` keywords for methods.
-Using it, you can control properties modification on an object.
+ใน C# / VB.NET คุณสามารถใช้ `public`, `protected` และ `private` สำหรับเมทอดได้
+โดยใช้มัน, คุณสามารถควบคุมการปรับเปลี่ยนคุณสมบัติของ object ด้
 
-- When you want to do more beyond getting an object property, you don't have to look up and change every accessor in your codebase.
-- Makes adding validation simple when doing a `set`.
-- Encapsulates the internal representation.
-- Easy to add logging and error handling when getting and setting.
-- Inheriting this class, you can override default functionality.
-- You can lazy load your object's properties, let's say getting it from a server.
+- เมื่อคุณต้องการทำมากกว่าการรับค่าของคุณสมบัติของ object คุณไม่จำเป็นต้องค้นหาและเปลี่ยนแต่ละ accessor ในโค้ดเบสของคุณ
+- ทำให้การเพิ่มการตรวจสอบข้อมูลเป็นเรื่องง่ายเมื่อทำการ `set`
+- ห่อหุ้มการแทนที่ภายใน
+- ง่ายต่อการเพิ่มการบันทึกข้อผิดพลาดและการจัดการข้อผิดพลาดเมื่อรับและกำหนดค่า
+- เมื่อสืบทอดคลาสนี้ คุณสามารถแทนที่(Override) ฟังก์ชันตั้งต้นได้
+- คุณสามารถ lazy load คุณสมบัติของ object ได้พูดง่าย ๆ คือการรับมันมาจากเซิร์ฟเวอร์
 
-Additionally, this is part of Open/Closed principle, from object-oriented design principles.
+นอกจากนี้ ส่วนนี้เป็นส่วนหนึ่งของหลักการออกแบบที่เรียกว่า Open/Closed principle ซึ่งเป็นหลักการการออกแบบแบบเชิงวัตถุ
+</details>
 
 **Bad:**
 
@@ -1592,7 +1593,7 @@ class BankAccount
     {
         if (amount > _balance)
         {
-            throw new Exception('Amount greater than available balance.');
+            throw new Exception("Amount greater than available balance.");
         }
 
         _balance -= amount;
@@ -1618,7 +1619,7 @@ balance = bankAccount.Balance;
 </details>
 
 <details>
-  <summary><b>Make objects have private/protected members</b></summary>
+  <summary><b>ทำให้ objects มี private/protected members</b></summary>
 
 **Bad:**
 
