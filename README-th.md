@@ -4,10 +4,10 @@
 
 ตรวจสอบ[บล็อกของฉัน](https://medium.com/@thangchung)หรือส่งคำทักทายที่ [Twitter](https://twitter.com/thangchung)!
 
-# Table of Contents
+# สารบัญ
 
 - [หลักการ Clean Code ที่ปรับใช้สำหรับ .NET/.NET Core](#หลักการ-clean-code-ที่ปรับใช้สำหรับ-netnet-core)
-- [Table of Contents](#table-of-contents)
+- [สารบัญ](#สารบัญ)
 - [บทนำ](#บทนำ)
 - [Clean Code .NET](#clean-code-net)
   - [Naming](#naming)
@@ -61,7 +61,7 @@ int d;
 int daySinceModification;
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ Back to top](#สารบัญ)**
 
 </details>
 
@@ -82,7 +82,7 @@ var dataFromDb = db.GetFromService().ToList();
 var listOfEmployee = _employeeService.GetEmployees().ToList();
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ Back to top](#สารบัญ)**
 
 </details>
 
@@ -127,7 +127,7 @@ public bool IsShopOpen(string day, int amount)
 }
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ Back to top](#สารบัญ)**
 
 </details>
 
@@ -170,7 +170,7 @@ class Animal {}
 class Alpaca {}
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -199,7 +199,7 @@ public class Employee
 }
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ Back to top](#สารบัญ)**
 
 </details>
 
@@ -230,7 +230,7 @@ public double CalculateSalary(int workingDays, int workingHours)
 }
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ Back to top](#สารบัญ)**
 
 </details>
 
@@ -275,7 +275,7 @@ public static void main(String[] args)
 }
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ Back to top](#สารบัญ)**
 
 </details>
 
@@ -388,7 +388,7 @@ public long Fibonacci(int n)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -433,7 +433,7 @@ foreach (var location in locations)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -463,7 +463,7 @@ if (userRole == ADMIN_ROLE)
 
 Using this we only have to change in centralize place and others will adapt it.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -498,7 +498,7 @@ public class Car
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -517,7 +517,7 @@ var ymdstr = DateTime.UtcNow.ToString("MMMM dd, yyyy");
 var currentDate = DateTime.UtcNow.ToString("MMMM dd, yyyy");
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ Back to top](#สารบัญ)**
 
 </details>
 
@@ -539,7 +539,7 @@ GetUserProfile();
 GetUser();
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ Back to top](#สารบัญ)**
 
 </details>
 
@@ -583,7 +583,7 @@ Console.Write("JSON form of Data object: ");
 Console.WriteLine(sr2.ReadToEnd());
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ Back to top](#สารบัญ)**
 
 </details>
 
@@ -626,7 +626,7 @@ if (person.PersonAccess == PersonAccess.ACCESS_UPDATE)
 }
 ```
 
-**[⬆ Back to top](#table-of-contents)**
+**[⬆ Back to top](#สารบัญ)**
 
 </details>
 
@@ -661,7 +661,7 @@ if(cityGroup.Success == true && zipCodeGroup.Success == true)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -691,7 +691,7 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -741,7 +741,7 @@ Console.WriteLine(name); // Ryan McDermott
 Console.WriteLine(fullName); // His first name is Ryan, and his last name is McDermott
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -776,7 +776,7 @@ if (IsDOMNodePresent(node))
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -849,7 +849,7 @@ class Cessna : IAirplane
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -898,7 +898,7 @@ public Path TravelToTexas(object vehicle)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -929,7 +929,7 @@ public int Combine(int val1, int val2)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -968,7 +968,7 @@ public void CreateTempFile(string name)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1018,7 +1018,7 @@ var configuration = new Configuration(new Dictionary<string, string>() {
 
 And now you must use instance of `Configuration` in your application.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1085,7 +1085,7 @@ var connection = new DBConnection(options);
 
 And now you must use instance of `DBConnection` in your application.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1130,7 +1130,7 @@ public void CreateMenu(MenuConfig config)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1171,7 +1171,7 @@ public List<Client> GetActiveClients(string[] clients)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1214,7 +1214,7 @@ var message = new Email(...);
 message.Send();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1368,7 +1368,7 @@ class BetterJSAlternative
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1478,7 +1478,7 @@ var review = new PerformanceReview(employee);
 review.PerfReview();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1503,7 +1503,7 @@ if (article.IsPublished())
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1541,7 +1541,7 @@ var request = RequestModule(requestUrl);
 InventoryTracker("apples", request, "www.inventory-awesome.io");
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1619,7 +1619,7 @@ bankAccount.WithdrawBalance(price);
 balance = bankAccount.Balance;
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1660,7 +1660,7 @@ var employee = new Employee("John Doe");
 Console.WriteLine(employee.Name); // Employee name: John Doe
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1726,7 +1726,7 @@ internal static void ListFluentExtensions()
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1817,7 +1817,7 @@ class Employee
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -1909,7 +1909,7 @@ class UserSettings
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -2022,7 +2022,7 @@ class HttpRequester
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -2164,7 +2164,7 @@ var shapes = new[] { new Rectangle(), new Rectangle(), new Square() };
 RenderLargeRectangles(shapes);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -2254,7 +2254,7 @@ public class Robot : IWorkable
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -2358,7 +2358,7 @@ public class Manager
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -2454,7 +2454,7 @@ public List<EmployeeData> ShowList(Employee employees)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -2550,7 +2550,7 @@ public class MakeDotNetGreatAgainTests
 
 > Soure https://www.codingblocks.net/podcast/how-to-write-amazing-unit-tests
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -2615,7 +2615,7 @@ There are many new await-friendly techniques that should be used instead of the 
 
 > Source https://gist.github.com/jonlabelle/841146854b23b305b50fa5542f84b20c
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -2663,7 +2663,7 @@ catch (Exception ex)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -2701,7 +2701,7 @@ catch (Exception error)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -2749,7 +2749,7 @@ catch (TaskSchedulerException ex)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -2801,7 +2801,7 @@ catch (Exception error)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -2971,7 +2971,7 @@ indent_size = 2
 
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -3040,7 +3040,7 @@ void Actions()
 };
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -3064,7 +3064,7 @@ doStuff();
 doStuff();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -3097,7 +3097,7 @@ public int Combine(int a,int b)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
@@ -3177,7 +3177,7 @@ private int ConvertTo32BitInt(int value)
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#สารบัญ)**
 
 </details>
 
