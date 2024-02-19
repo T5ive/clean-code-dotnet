@@ -1661,10 +1661,10 @@ Console.WriteLine(employee.Name); // Employee name: John Doe
 ## Classes
 
 <details>
-  <summary><b>Use method chaining</b></summary>
+  <summary><b>ใช้ Method Chaining</b></summary>
 
-This pattern is very useful and commonly used in many libraries. It allows your code to be expressive, and less verbose.
-For that reason, use method chaining and take a look at how clean your code will be.
+แพทเทิร์นนี้มีประโยชน์มากและถูกใช้งานอย่างแพร่หลายในหลาย ๆ Library มันช่วยให้โค้ดของคุณมีการแสดงออกและน้อยคำกว่า
+เพื่อเหตุนี้ใช้ Method Chaining และดูว่าโค้ดของคุณจะสะอาดเพียงใด
 
 **Good:**
 
@@ -1725,19 +1725,18 @@ internal static void ListFluentExtensions()
 </details>
 
 <details>
-  <summary><b>Prefer composition over inheritance</b></summary>
+  <summary><b>ควรใช้ composition มากกว่า inheritance</b></summary>
 
-As stated famously in [_Design Patterns_](https://en.wikipedia.org/wiki/Design_Patterns) by the Gang of Four,
-you should prefer composition over inheritance where you can. There are lots of good reasons to use inheritance and lots of good reasons to use composition.
+ตามที่ระบุไว้ใน [_Design Patterns_](https://en.wikipedia.org/wiki/Design_Patterns) โดย Gang of Four,
+คุณควรใช้ composition แทน inheritance เมื่อมีโอกาส มีหลายเหตุผลดีที่จะใช้ inheritance และหลายเหตุผลดีที่จะใช้ composition
 
-The main point for this maxim is that if your mind instinctively goes for inheritance, try to think if composition could model your problem better. In some cases it can.
+จุดสำคัญสำหรับกฎนี้คือหากใจของคุณเริ่มเอาไปใช้กับ inheritance ลองคิดว่า composition สามารถแสดงโมเดลปัญหาของคุณได้ดีขึ้น ในบางกรณี
 
-You might be wondering then, "when should I use inheritance?" It
-depends on your problem at hand, but this is a decent list of when inheritance makes more sense than composition:
+คุณอาจสงสัยว่า "เมื่อควรใช้ inheritance?" มันขึ้นอยู่กับปัญหาของคุณ แต่นี่เป็นรายการที่ดีเมื่อ inheritance เหมาะกว่า composition:
 
-1. Your inheritance represents an "is-a" relationship and not a "has-a" relationship (Human->Animal vs. User->UserDetails).
-2. You can reuse code from the base classes (Humans can move like all animals).
-3. You want to make global changes to derived classes by changing a base class (Change the caloric expenditure of all animals when they move).
+1. Inheritance ของคุณแทนความสัมพันธ์ "เป็น" และไม่ใช่ "มี" (Human->Animal vs. User->UserDetails).
+2. คุณสามารถ reuse code จาก base classes ได้ (Humans can move like all animals).
+3. คุณต้องการทำการเปลี่ยนแปลง global ให้กับ derived classes โดยการเปลี่ยน base class (Change the caloric expenditure of all animals when they move).
 
 **Bad:**
 
@@ -1756,8 +1755,8 @@ class Employee
     // ...
 }
 
-// Bad because Employees "have" tax data.
-// EmployeeTaxData is not a type of Employee
+// แย่เพราะ Employee "มี" ข้อมูลภาษี (TaxData)
+// EmployeeTaxData ไม่ใช่ประเภทของพนักงาน
 
 class EmployeeTaxData : Employee
 {
